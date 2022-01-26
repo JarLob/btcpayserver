@@ -71,10 +71,6 @@ jobs:
     #    nuget restore name.sln
     #    msbuild name.sln /p:UseSharedCompilation=false
 
-    - shell: cmd
-      run: |
-        cd build
-        build.cmd
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
       with:
