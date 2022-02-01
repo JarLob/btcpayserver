@@ -55,6 +55,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         queries: +security-extended
+        tools: latest
         #config-file: ./.github/codeql-config.yml
 
     - name: Autobuild
